@@ -7,3 +7,5 @@ I'm a newbie to use the github krub
 but today I try to learning knowledge kube and docker and conceptual to deploy software with github krub.
 
 learning git in vscode ####
+
+typing from whiteCat meow meow
