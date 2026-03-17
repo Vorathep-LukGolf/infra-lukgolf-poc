@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nextcloud-config
+  namespace: nextcloud-stack
+data:
+  TZ: "Asia/Bangkok"
+  NEXTCLOUD_TRUSTED_DOMAINS: "10.1.4.61:30080 10.1.4.62:30080 10.1.4.63:30080"
+  OVERWRITEPROTOCOL: "http"
