@@ -1,12 +1,4 @@
-services:
-  rancher:
-    image: rancher/rancher:v2.12.3
-    container_name: rancher
-    restart: always
-    privileged: true
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - /docker/rancher:/var/lib/rancher
-
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: nextcloud-stack
