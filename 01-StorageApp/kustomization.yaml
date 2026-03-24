@@ -6,6 +6,6 @@ resources:
   - 02-secret.yaml
   - 03-configmap.yaml
   - 04-storage.yaml
-  - 05-mariadb.yaml
+  - 05-mariadb.yml
   - 06-nextcloud.yaml
   - 07-service.yaml
