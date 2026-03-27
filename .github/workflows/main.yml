@@ -7,7 +7,7 @@ on:
 
 jobs:
   docker:
-    runs-on: [self-hosted internal]
+    runs-on: [self-hosted, internal]
 
     steps:
       - name: Checkout source
