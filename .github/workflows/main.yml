@@ -7,7 +7,7 @@ on:
 
 jobs:
   docker:
-    runs-on: [self-hosted, internal]
+    runs-on: [self-hosted internal]
 
     steps:
       - name: Checkout source
@@ -16,7 +16,7 @@ jobs:
       - name: Login to Harbor
         uses: docker/login-action@v3
         with:
-          registry: ${{ secrets.HARBOR_REGISTRY }}
+          registry: 10.1.4.60:8080
           username: ${{ secrets.HARBOR_USERNAME }}
           password: ${{ secrets.HARBOR_PASSWORD }}
 
@@ -29,5 +29,5 @@ jobs:
           context: ./hello-web
           push: true
           tags: |
-            ${{ secrets.HARBOR_REGISTRY }}/apps-test/hello-web:${{ env.IMAGE_TAG }}
-            ${{ secrets.HARBOR_REGISTRY }}/apps-test/hello-web:latest
+            10.1.4.60:8080/apps-test/hello-web:${{ env.IMAGE_TAG }}
+            10.1.4.60:8080/apps-test/hello-web:latest
